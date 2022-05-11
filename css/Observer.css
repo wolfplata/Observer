@@ -1,0 +1,63 @@
+*{  margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.body{
+    font-family: 'Tapestry', cursive;
+}
+
+.fondo{
+    background-image:linear-gradient(180deg,rgba(0,0,0,0.2) 0%, rgba(4,1,14) 75%) ,url(https://pm1.narvii.com/6844/b3afa293d4157a84c7bbfe8bae3305699715af0cv2_hq.jpg);
+    background-size:100% 100%;
+    padding:10px 10px 10px 10px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+
+.hola1{
+    color:black;
+    font-size:60px;
+    opacity:1.0;
+}
+.hola2{
+    color:black;
+    opacity:1.0;
+}
+.parrafo1{
+    color:white;
+    font-size:40px;
+    opacity:1.0;
+}
+.parrafo2{
+    color:white;
+    font-size:40px;
+    opacity:1.0;
+}
+
+.fondo img{
+    width: 50%;
+    height: 500px;
+    overflow:hidden;
+    margin-bottom:40px;
+    margin-left:300px;
+    border-radius:20px;
+    
+    opacity:0;
+    transform: scale(0.8);
+    transition: 0.7s ease-in-out all;
+}
+
+.fondo img.izquierda{
+    transform:translateX(-100px);
+}
+
+.fondo img.derecha{
+    transform:translateX(100px);
+}
+
+.fondo img.visible{
+    opacity:1;
+    transform:scale(1) translate(0);
+}
